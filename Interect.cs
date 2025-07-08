@@ -15,6 +15,7 @@ public class Interect : MonoBehaviour
     public static bool friendDoorIn; //친구집들어가기
     public static bool friendDoorOut; //친구집나가기
     public static bool bag; 
+    public static bool pickUpItem; 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player") && CompareTag("Bed"))
@@ -83,6 +84,12 @@ public class Interect : MonoBehaviour
             friendDoorOut = false;
             goHomeBack = false;
             homeDoor = false;
+            if (pickUpItem)
+            {
+                Debug.Log("pick up item");
+                Destroy(gameObject);
+                pickUpItem = false;
+            }
         }
     }
 }
