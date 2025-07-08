@@ -8,10 +8,10 @@ public class FadeMotion : MonoBehaviour
     public static bool FadeOut;
     private float time = 0;
 
-    void Start()
-    {
-        image = GetComponent<Image>();
-    }
+    // void Start()
+    // {
+    //     image = GetComponent<Image>();
+    // }
     // void Update()
     // {
     //     Color color = image.color;
