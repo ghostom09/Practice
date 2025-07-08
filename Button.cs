@@ -6,7 +6,6 @@ public class Button : MonoBehaviour
     public static bool buttonIsAlive = false; //버튼 활성화유무
     public static bool objectMoveFade; //버튼 누를시 페이드와 이동
     public static bool objectMove; // 이동만
-    public static bool mapMove;
     private void Update()
     {
         if (buttonIsAlive)
